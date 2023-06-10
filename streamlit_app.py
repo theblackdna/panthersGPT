@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 import altair as alt
 import openai
-openai.api_key = st.secrets["API_key"]
+openai.api_key = st.secrets["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"]
 import hashlib
 from PIL import Image
 
