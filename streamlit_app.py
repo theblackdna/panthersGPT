@@ -4,6 +4,7 @@ import streamlit as st
 import altair as alt
 import openai
 openai.api_key = st.secrets["API_key"]
+openai.api_base = 'https://api.pawan.krd/v1'
 import hashlib
 from PIL import Image
 
