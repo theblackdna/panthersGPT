@@ -63,14 +63,14 @@ def app():
     st.set_page_config(layout="wide")
     
     # Load image from file
-    img = Image.open("weebsu.png")
+    img = Image.open("uspf.png")
     new_size = (150, 150)
     img = img.resize(new_size)
     st.image(img)
     
     history = []
-    st.title("Hi I'm Weebsu! How can I help?")
-    st.subheader("Weebsu is a chatGPT-enabled Chatbot")
+    st.title("Hi I'm Auggie! How can I help you?")
+    st.subheader("Auggie is a ChatGPT-powered Chatbot")
 
     st.write("This bot can answer questions about the history, mission, vision, goals, purpose, objectives, innovations, milestones and other information specifically about WVSU.")
     
@@ -85,11 +85,11 @@ def app():
         for item in range(len(history)):
             st.write(history[item])
 
-    st.write("-----------\n\nThis project of the MIS uses generative AI enhanced with specific knowledge on a set of topics. Like chatGPT, the bot can engage the user in a conversation. Using prompt engineering, we trained this AI with specific information beyond the general knowledge base of chatGPT.")
+    st.write("-----------\n\nThis project of Dan Chavez uses generative AI enhanced with specific knowledge on a set of topics. Like ChatGPT, the bot can engage the user in a conversation. Using prompt engineering, the AI was trained with specific information beyond the general knowledge base of ChatGPT.")
                 
-    st.write('\n\n\n© 2023 West Visayas State University - Management Information System Office.')
-    st.write('\n\n\nDisclaimer: Weebsu may produce inaccurate information about people, places, or facts especially if the question is outside the scope of topics it was trained on.')
-    text = "*WVSU at the forefront of AI-research in Western Visayas.*"
+    st.write('\n\n\n© 2023 University of Southern Philippines Foundation & Dan Chavez.')
+    st.write('\n\n\nDisclaimer: Auggie may produce inaccurate information about people, places, or facts especially if the question is outside the scope of topics it was trained on.')
+    text = "*Created with ♥️*"
     st.markdown(text)
 
 # Run the app
