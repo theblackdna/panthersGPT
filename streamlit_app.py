@@ -72,7 +72,7 @@ def app():
     st.title("Hi I'm Auggie! How can I help you?")
     st.subheader("Auggie is a ChatGPT-powered Chatbot")
 
-    st.write("This bot can answer questions about the history, mission, vision, goals, purpose, objectives, innovations, milestones and other information specifically about WVSU.")
+    st.write("This bot can answer questions about the history, mission, vision, goals, purpose, objectives, innovations, milestones and other information specifically about USPF.")
     
     # Create a multiline text field
     user_input = st.text_area('Input your question:', height=5)
