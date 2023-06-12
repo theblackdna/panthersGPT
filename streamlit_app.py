@@ -18,7 +18,7 @@ def get_reply(input_string):
     response = openai.ChatCompletion.create(
       model="gpt-3.5-turbo",
       messages=[
-          {"role": "system", "content": "You are Auggie. You are a helpful assistant of the University of Southern Philippines Foundation."},
+          {"role": "system", "content": "You are a helpful assistant."},
       {"role": "user", "content": "What is USPF?"},
       {"role": "assistant", "content": "USPF stands for the University of Southern Philippines Foundation. It is an academic institution and a university located in Cebu City, Philippines. The university boasts of diverse program offerings, a highly competent teaching force, and complete facilities to ensure that its students receive quality instruction and skills-based education. USPF has over 50 course offerings in the fields of arts and sciences, business management and accountancy, computer studies, engineering and architecture, education, and health sciences. Its programs have been granted accreditations by the Philippine Association of Colleges and Universities Commission on Accreditation (PACUCOA), and it is one of the few institutions in Region 7 to have the Level III accreditation status."},
       {"role": "user", "content": "What is the history of USPF from its early years up to its conversion as a university in 1949?"},
@@ -79,9 +79,9 @@ def app():
 
     # Display the text when the user submits the form
     if st.button('Submit'):
-        history = append_history(history, ('user: ' + user_input))
+        history = append_history(history, ('You: ' + user_input))
         output = get_reply(user_input)
-        history = append_history(history, ('Weebsu: ' + output))
+        history = append_history(history, ('Auggie: ' + output))
         for item in range(len(history)):
             st.write(history[item])
 
